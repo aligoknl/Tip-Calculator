@@ -1,0 +1,114 @@
+body{
+    background-color: hsl(185, 41%, 84%);
+    font-family: monospace;
+    font-weight: 700;
+}
+#main-container{
+display: flex;
+justify-content: center;
+}
+
+#container{
+    background-color: white;
+    display: flex;
+    flex: flex-wrap;
+    padding: 2rem; 
+    margin-top:3rem;
+    border-radius: 1rem;
+    gap: 1rem;
+    
+}
+h1{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+#bill-input, #people-input{
+    font-family: monospace;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+
+#second-part{
+
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    padding: 1rem;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2,1fr);
+}
+
+#amount-per{
+    grid-area: 1/1/2/2;
+}
+
+#result-amount{
+    grid-area: 1/2/2/3;
+    text-align: center;
+    font-size: 26px;
+    margin-left: 2rem;
+}
+#total-per{
+    grid-area: 2/1/3/2;
+}
+
+#result-total{
+    grid-area: 2/2/3/3;
+    text-align: center;
+    font-size: 26px;
+    margin-left: 2rem;
+}
+
+
+#reset{
+    grid-area: 3/1/4/3;
+    text-align: center;
+    margin-top: 2rem;
+    min-width: 100%;
+}
+
+#reset-btn{
+    background-color: hsl(186, 14%, 43%);
+    font-family: monospace;
+    border-radius: 5px;
+    color: white;
+}
+
+#reset-btn:hover{
+    background-color: green;
+}
+
+#tips{
+    display: grid;
+    grid-template: repeat(2, 1fr)/repeat(3,1fr);
+    gap: 0.5rem;
+    text-align: center;
+   
+}
+
+button{
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.3rem 0;
+    font-family: monospace;
+    font-size: 18px;
+   
+}
+button:hover{
+    background-color: green;
+}
+
+#custom{
+    font-family: monospace;
+    border-radius: 5px;
+}
+
+.per-person{
+    font-size: 10px;
+    color: hsl(186, 14%, 43%);
+}
