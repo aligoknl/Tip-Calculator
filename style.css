@@ -1,37 +1,57 @@
 body{
     background-color: hsl(185, 41%, 84%);
-    font-family: monospace;
+    font-family: 'Space Mono', monospace;
     font-weight: 700;
 }
+
 #main-container{
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 #container{
     background-color: white;
     display: flex;
-    flex: flex-wrap;
+    flex-wrap: wrap;
     padding: 2rem; 
-    margin-top:3rem;
+    margin-top:2rem;
     border-radius: 1rem;
     gap: 1rem;
-    
 }
+
 h1{
     text-align: center;
     margin-top: 5rem;
 }
 
 #bill-input, #people-input{
-    font-family: monospace;
+    font-family: 'Space Mono', monospace;
     border-radius: 5px;
     padding: 0.5rem;
+    display: block; 
+    padding: 10px 10px 10px 20px; 
+    text-align: right;
+    color:  hsl(183, 100%, 15%);
+    font-size: 22px;
+    font-weight: 700;
 }
 
+.unit { 
+    position: absolute; 
+    display: block; 
+    left: 5px; 
+    top: 10px; 
+    z-index: 9; 
+    opacity: 0.3;
+    font-size: 22px;
+    font-weight: 700;
+ }
+
+.input-box { 
+    position: relative; 
+}
 
 #second-part{
-
     background-color: hsl(183, 100%, 15%);
     border-radius: 1rem;
     padding: 1rem;
@@ -43,50 +63,54 @@ h1{
 
 #amount-per{
     grid-area: 1/1/2/2;
+    padding-top: 1rem ;
 }
 
 #result-amount{
     grid-area: 1/2/2/3;
     text-align: center;
-    font-size: 26px;
+    font-size: 32px;
     margin-left: 2rem;
 }
+
 #total-per{
     grid-area: 2/1/3/2;
+    padding-top: 1rem ;
 }
 
 #result-total{
     grid-area: 2/2/3/3;
     text-align: center;
-    font-size: 26px;
+    font-size: 32px;
     margin-left: 2rem;
 }
-
 
 #reset{
     grid-area: 3/1/4/3;
     text-align: center;
     margin-top: 2rem;
-    min-width: 100%;
 }
 
 #reset-btn{
     background-color: hsl(186, 14%, 43%);
-    font-family: monospace;
+    font-family: 'Space Mono', monospace;
     border-radius: 5px;
     color: white;
+    min-width: 100%;
+    padding: 2px;
+    font-size: 24px;
 }
 
 #reset-btn:hover{
-    background-color: green;
+    background-color: rgb(16, 29, 16);
 }
 
 #tips{
     display: grid;
     grid-template: repeat(2, 1fr)/repeat(3,1fr);
+    justify-items: stretch;
     gap: 0.5rem;
     text-align: center;
-   
 }
 
 button{
@@ -95,20 +119,41 @@ button{
     border-radius: 5px;
     text-align: center;
     padding: 0.3rem 0;
-    font-family: monospace;
-    font-size: 18px;
-   
+    font-size: 18px;   
+    font-family: 'Space Mono', monospace;
 }
+
 button:hover{
-    background-color: green;
+    background-color: rgb(17, 31, 17);
 }
 
 #custom{
-    font-family: monospace;
+    color:  hsl(183, 100%, 15%);
+    font-size: 16px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
     border-radius: 5px;
+    text-align: right;
+    padding: 10px 10px 10px 20px; 
 }
 
 .per-person{
     font-size: 10px;
     color: hsl(186, 14%, 43%);
 }
+
+
+@media  screen and (max-width:700px) {
+
+    #container{  
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.1rem;
+    }
+
+    h1{
+        text-align: center;
+        margin-top: 0.2rem;
+    }
+}
+    
