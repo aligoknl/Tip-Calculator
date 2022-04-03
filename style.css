@@ -157,12 +157,7 @@ button:hover{
     }
     
     .unit { 
-    position: absolute; 
-    display: block; 
-    z-index: 9; 
-    opacity: 0.3;
-    font-size: 22px;
-    font-weight: 700;
+    display: none; 
  }
 }
     
