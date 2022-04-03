@@ -155,5 +155,14 @@ button:hover{
         text-align: center;
         margin-top: 0.2rem;
     }
+    
+    .unit { 
+    position: absolute; 
+    display: block; 
+    z-index: 9; 
+    opacity: 0.3;
+    font-size: 22px;
+    font-weight: 700;
+ }
 }
     
