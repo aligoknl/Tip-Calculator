@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <title>Tip calculator app</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1 id="title">TIP BUDDY</h1>
+  <h1 id="title">TIP <br> BUDDY</h1>
+
   <div id="main-container">
    
     <section id="container">
@@ -15,15 +17,15 @@
 
         <div id="bill-part">
           <p>Bill</p>
-          <label>
-            <input id="bill-input" type="text" placeholder="$">
+          <label class="input-box">
+            <input id="bill-input" type="text"><span class="unit">$</span>
           </label>
         </div>
 
         <div id="people-part">
           <p>Number of People</p>
-          <label>
-            <input id="people-input" type="text" placeholder= "People">
+          <label class="input-box">
+            <input id="people-input" type="text"><span class="unit">People</span>
           </label>
         </div>
 
@@ -32,7 +34,7 @@
           <div id="tips">
             <button id="tip-btn-five" onclick="fivePercent()">5%</button>
             <button id="tip-btn-ten" onclick="tenPercent()">10%</button>
-            <button id="tip-btn-fifteen"onclick="fifteenPercent()">15%</button>
+            <button id="tip-btn-fifteen" onclick="fifteenPercent()">15%</button>
             <button id="tip-btn-twenty"onclick="twentyPercent()">20%</button>
             <button id="tip-btn-twentyfive"onclick="twentyfivePercent()">25%</button>
             <input id="custom" onchange= "customfunc(this.value)" type="text" placeholder="Custom">
@@ -40,17 +42,15 @@
         </div>
       </div>
 
-
       <div id="second-part">
-        <p id="amount-per"><br>Tip Amount <br><span class="per-person">/person</span></p>
+        <p id="amount-per">Tip Amount <br><span class="per-person">/person</span></p>
         <p id="result-amount">$0.00</p>
-        <p id="total-per"><br>Total <br><span class="per-person">/person</span></p>
+        <p id="total-per">Total <br><span class="per-person">/person</span></p>
         <p id="result-total">$0.00</p>
         <div id="reset">
           <input id ="reset-btn" type="button" onclick="resetfunc()" value="RESET">
         </div>
       </div>
-      
     </section>
 </div>
 
