@@ -1,7 +1,3 @@
-
-
-
-
 function fivePercent() {
     let bill= parseFloat(document.getElementById("bill-input").value);
     let person= parseFloat(document.getElementById("people-input").value);
