@@ -3,7 +3,7 @@
 ## 1. Link and Preview
 Project link is available at [Tip-Calculator App](https://aligoknl.github.io/Tip-Calculator/index.html)
 
-![Preview of Tip-Calculator!](/Tip-Calculator.gif)
+![Preview of Tip-Calculator!](GIF/Tip-Calculator.GIF)
 
 ## 2. Description
 The Tip-Calculator is a web application that helps you to calculate the tips you will give according to the percentage. You can use buttons have a specific percentages or you can customize it. 
